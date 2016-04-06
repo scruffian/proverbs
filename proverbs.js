@@ -2987,7 +2987,9 @@ var proverbs = [
   {
       "chapter": 21,
       "text": "A gift in secret pacifieth anger: and a reward in the bosom strong wrath.",
-      "verse": 14
+      "verse": 14,
+      "url": "https://c2.staticflickr.com/8/7373/16313564648_fb6e60ef07_h.jpg",
+      "credit": "https://www.flickr.com/photos/derodeolifant/16313564648"
   },
   {
       "chapter": 21,

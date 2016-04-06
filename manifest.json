@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
 
-  "name": "Proverbs",
+  "name": "Daily Proverb",
   "description": "This extension shows a different proverb every day.",
   "version": "1.0",
 
@@ -10,9 +10,5 @@
   },
   "chrome_url_overrides" : {
     "newtab": "index.html"
-  },
-  "permissions": [
-    "activeTab",
-    "https://ajax.googleapis.com/"
-  ]
+  }
 }

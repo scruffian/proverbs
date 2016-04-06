@@ -6,7 +6,7 @@
  *   The callback gets a string that describes the failure reason.
  */
 function getImageUrl(searchTerm, callback, errorCallback) {
-  var searchUrl = 'https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=9f6e34f484297f22c46cb330d940c5f8&tags=' + searchTerm + '&sort=relevance&extras=url_h%2Curl_o%2Co_dims&format=json&nojsoncallback=1';
+  var searchUrl = 'https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=9f6e34f484297f22c46cb330d940c5f8&tags=' + searchTerm + '&sort=relevance&extras=url_h&format=json&nojsoncallback=1';
 
   var x = new XMLHttpRequest();
   x.open('GET', searchUrl);
@@ -29,9 +29,10 @@ function getImageUrl(searchTerm, callback, errorCallback) {
       errorCallback('No pictures big enough!');
       return;
     }
-    var firstResult = photoArray[0];
-    callback(firstResult.url_h);
-
+    renderStatus('Search term: ' + searchTerm + '\n' + 'Flickr search result: ' + photoArray[0]);
+    var imageUrl = photoArray[0].url_h;
+    var imagePage = 'https://www.flickr.com/photos/' + photoArray[0].owner + '/' + photoArray[0].id;
+    callback( imageUrl, imagePage );
   };
   x.onerror = function() {
     errorCallback('Network error.');
@@ -53,6 +54,18 @@ function getProverb() {
   return proverbs[ d % proverbs.length ];
 }
 
+function showImage( imageUrl, credit ) {
+    document.getElementById('background-item').style.backgroundImage = "url('" + imageUrl + "')";
+    document.getElementById('preload-image').onload = function() {
+      document.getElementById('background').className = 'fadein';
+      document.getElementById('background-overlay').className = 'fadein';
+      document.getElementById('photo-credit').href = credit;
+
+    };
+    document.getElementById('preload-image').src = imageUrl;
+
+  }
+
 document.addEventListener('DOMContentLoaded', function() {
   var proverb = getProverb();
   var searchTerms = proverb.text.replace(/:/g, '').replace(/\./g, '').replace(/;/g, '').split( ' ' ).filter( function( word ) {
@@ -65,16 +78,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
   document.getElementById('proverb').innerHTML = proverb.text + '<br/><a href="http://javascripture.org/#/Proverbs/' + proverb.chapter + '/' + proverb.verse + '" class="reference">Proverbs ' + proverb.chapter + ':' + proverb.verse + '</span>';
 
-  getImageUrl( searchQuery, function(imageUrl) {
-    renderStatus('Search term: ' + searchQuery + '\n' + 'Flickr search result: ' + imageUrl);
-    document.getElementById('background-item').style.backgroundImage = "url('" + imageUrl + "')";
-    document.getElementById('preload-image').onload = function() {
-      document.getElementById('background').className = 'fadein';
-      document.getElementById('background-overlay').className = 'fadein';
-    };
-    document.getElementById('preload-image').src = imageUrl;
-
-  }, function(errorMessage) {
-    renderStatus('Cannot display image. ' + errorMessage);
-  });
+  if ( proverb.url ) {
+    showImage( proverb.url, proverb.credit );
+  } else { // Get from flickr
+    getImageUrl( searchQuery, showImage, function(errorMessage) {
+      renderStatus('Cannot display image. ' + errorMessage);
+    });
+  }
 });
