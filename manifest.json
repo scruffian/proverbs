@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Daily Proverb",
   "description": "Shows a different proverb every day.",
-  "version": "1.0",
+  "version": "1.0.0",
   "browser_action": {
     "default_icon": "icon.png"
   },
