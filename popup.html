@@ -1,0 +1,87 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+    <title>Daily Proverb</title>
+    <style>
+      html {
+        height: 100%;
+      }
+      body {
+        display: flex;
+          align-items: center;
+          justify-content: center;
+        height: 100%;
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 100%;
+        text-align: center;
+      }
+      #proverb {
+        color: #fff;
+        font-size: 4em;
+        padding: 3em;
+        text-align: center;
+        z-index: 4;
+      }
+      #background-overlay {
+          position: fixed;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          z-index: 2;
+          background: url(overlay-vignette.png);
+          background-size: 100% 100%;
+          opacity: 0;
+      }
+      .fadein {
+          -webkit-animation: fadein 5.5s ease 0s forwards;
+      }
+      #background {
+          margin: 0;
+          opacity: 0;
+          padding: 0;
+          z-index: 1;
+      }
+      #background, #background li {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+      }
+
+      #background, #background li {
+          background-color: transparent;
+          background-size: cover;
+          background-position: center center;
+          background-repeat: no-repeat;
+      }
+      @keyframes fadein {
+          from { opacity: 0; }
+          to   { opacity: 1; }
+      }
+      </style>
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+     -->
+    <script src="popup.js"></script>
+  </head>
+  <body>
+    <div id="background-overlay"></div>
+    <ul id="background">
+      <li id="background-item">
+      </li>
+    </ul>
+    <div id="proverb"></div>
+  </body>
+</html>
+
