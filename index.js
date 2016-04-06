@@ -48,12 +48,14 @@ function renderProverb(statusText) {
 }
 
 function getProverb() {
-  return proverbs[Math.floor(Math.random()*proverbs.length)];
+  var d = new Date();
+  d.setHours(0,0,0,0);
+  return proverbs[ d % proverbs.length ];
 }
 
 document.addEventListener('DOMContentLoaded', function() {
   var proverb = getProverb();
-  var searchTerms = proverb.text.replace(/\:/g, '').replace(/\./g, '').split( ' ' ).filter( function( word ) {
+  var searchTerms = proverb.text.replace(/:/g, '').replace(/\./g, '').replace(/;/g, '').split( ' ' ).filter( function( word ) {
     return word.length > 4;
   } )
   var searchQuery = searchTerms;
@@ -61,12 +63,17 @@ document.addEventListener('DOMContentLoaded', function() {
   // Put the image URL in Google search.
   renderStatus('Performing Flickr search for ' + searchQuery );
 
+  document.getElementById('proverb').innerHTML = proverb.text + '<br/><a href="http://javascripture.org/#/Proverbs/' + proverb.chapter + '/' + proverb.verse + '" class="reference">Proverbs ' + proverb.chapter + ':' + proverb.verse + '</span>';
+
   getImageUrl( searchQuery, function(imageUrl) {
     renderStatus('Search term: ' + searchQuery + '\n' + 'Flickr search result: ' + imageUrl);
     document.getElementById('background-item').style.backgroundImage = "url('" + imageUrl + "')";
-    document.getElementById('proverb').innerHTML = proverb.text + '<br/><span class="reference">Proverbs ' + proverb.chapter + ':' + proverb.verse + '</span>';
-    document.getElementById('background').className = 'fadein';
-    document.getElementById('background-overlay').className = 'fadein';
+    document.getElementById('preload-image').onload = function() {
+      document.getElementById('background').className = 'fadein';
+      document.getElementById('background-overlay').className = 'fadein';
+    };
+    document.getElementById('preload-image').src = imageUrl;
+
   }, function(errorMessage) {
     renderStatus('Cannot display image. ' + errorMessage);
   });

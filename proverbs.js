@@ -1,5 +1,5 @@
 var proverbs = [
-  {
+/*  {
       "chapter": 1,
       "text": "The proverbs of Solomon the son of David, king of Israel;",
       "verse": 1
@@ -1283,7 +1283,7 @@ var proverbs = [
       "chapter": 10,
       "text": "The proverbs of Solomon. A wise son maketh a glad father: but a foolish son is the heaviness of his mother.",
       "verse": 1
-  },
+  },*/
   {
       "chapter": 10,
       "text": "Treasures of wickedness profit nothing: but righteousness delivereth from death.",
@@ -3154,7 +3154,7 @@ var proverbs = [
       "text": "He that oppresseth the poor to increase his riches, and he that giveth to the rich, shall surely come to want.",
       "verse": 16
   },
-  {
+/*  {
       "chapter": 22,
       "text": "Bow down thine ear, and hear the words of the wise, and apply thine heart unto my knowledge.",
       "verse": 17
@@ -3568,7 +3568,7 @@ var proverbs = [
       "chapter": 25,
       "text": "These are also proverbs of Solomon, which the men of Hezekiah king of Judah copied out.",
       "verse": 1
-  },
+  },*/
   {
       "chapter": 25,
       "text": "It is the glory of God to conceal a thing: but the honour of kings is to search out a matter.",
@@ -4254,7 +4254,7 @@ var proverbs = [
       "text": "An unjust man is an abomination to the just: and he that is upright in the way is abomination to the wicked.",
       "verse": 27
   },
-  {
+/*  {
       "chapter": 30,
       "text": "The words of Agur the son of Jakeh, even the prophecy: the man spake unto Ithiel, even unto Ithiel and Ucal,",
       "verse": 1
@@ -4354,7 +4354,7 @@ var proverbs = [
       "text": "Such is the way of an adulterous woman; she eateth, and wipeth her mouth, and saith, I have done no wickedness.",
       "verse": 20
   },
-  {
+/*  {
       "chapter": 30,
       "text": "For three things the earth is disquieted, and for four which it cannot bear:",
       "verse": 21
@@ -4368,12 +4368,12 @@ var proverbs = [
       "chapter": 30,
       "text": "For an odious woman when she is married; and an handmaid that is heir to her mistress.",
       "verse": 23
-  },
-  {
+  },*/
+/*  {
       "chapter": 30,
       "text": "There be four things which are little upon the earth, but they are exceeding wise:",
       "verse": 24
-  },
+  },*/
   {
       "chapter": 30,
       "text": "The ants are a people not strong, yet they prepare their meat in the summer;",
@@ -4394,7 +4394,7 @@ var proverbs = [
       "text": "The spider taketh hold with her hands, and is in kings' palaces.",
       "verse": 28
   },
-  {
+  /*{
       "chapter": 30,
       "text": "There be three things which go well, yea, four are comely in going:",
       "verse": 29
@@ -4573,5 +4573,5 @@ var proverbs = [
       "chapter": 31,
       "text": "Give her of the fruit of her hands; and let her own works praise her in the gates.",
       "verse": 31
-  }
+  }*/
 ];

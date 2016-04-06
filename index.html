@@ -23,8 +23,9 @@
       #proverb {
         color: #fff;
         font-size: 4em;
-        padding: 3em;
+        padding: 0 10%;
         text-align: center;
+        text-shadow: 1px 1px 0 rgba(0,0,0,0.4);
         z-index: 4;
       }
       #background-overlay {
@@ -62,9 +63,15 @@
           background-repeat: no-repeat;
       }
       .reference {
+        color: #fff;
         font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-        font-size: .5em;
+        font-size: .3em;
         font-weight: 100;
+        position: absolute;
+          bottom: 1em;
+          right: 0;
+          left: 0;
+        text-decoration: none;
       }
       @keyframes fadein {
           from { opacity: 0; }
@@ -78,10 +85,10 @@
   <body>
     <div id="background-overlay"></div>
     <ul id="background">
-      <li id="background-item">
-      </li>
+      <li id="background-item"></li>
     </ul>
     <div id="proverb"></div>
+    <img id="preload-image" hidden />
   </body>
 </html>
 
