@@ -73,9 +73,8 @@ document.addEventListener('DOMContentLoaded', function() {
   } )
   var searchQuery = searchTerms;
 
-  // Put the image URL in Google search.
+  // Put the image URL in Flickr search.
   renderStatus('Performing Flickr search for ' + searchQuery );
-
   document.getElementById('proverb').innerHTML = proverb.text + '<br/><a href="http://javascripture.org/#/Proverbs/' + proverb.chapter + '/' + proverb.verse + '" class="reference">Proverbs ' + proverb.chapter + ':' + proverb.verse + '</span>';
 
   if ( proverb.url ) {

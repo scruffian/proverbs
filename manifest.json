@@ -1,10 +1,8 @@
 {
   "manifest_version": 2,
-
   "name": "Daily Proverb",
-  "description": "This extension shows a different proverb every day.",
+  "description": "Shows a different proverb every day.",
   "version": "1.0",
-
   "browser_action": {
     "default_icon": "icon.png"
   },
