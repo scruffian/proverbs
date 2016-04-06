@@ -16,7 +16,7 @@
           align-items: center;
           justify-content: center;
         height: 100%;
-        font-family: Helvetica, Arial, sans-serif;
+        font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
         font-size: 100%;
         text-align: center;
       }
@@ -39,7 +39,7 @@
           opacity: 0;
       }
       .fadein {
-          -webkit-animation: fadein 5.5s ease 0s forwards;
+          -webkit-animation: fadein 0.5s ease 0s forwards;
       }
       #background {
           margin: 0;
@@ -61,19 +61,19 @@
           background-position: center center;
           background-repeat: no-repeat;
       }
+      .reference {
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: .5em;
+        font-weight: 100;
+      }
       @keyframes fadein {
           from { opacity: 0; }
           to   { opacity: 1; }
       }
       </style>
 
-    <!--
-      - JavaScript and HTML must be in separate files: see our Content Security
-      - Policy documentation[1] for details and explanation.
-      -
-      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
-     -->
-    <script src="popup.js"></script>
+    <script src="proverbs.js"></script>
+    <script src="index.js"></script>
   </head>
   <body>
     <div id="background-overlay"></div>

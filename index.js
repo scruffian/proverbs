@@ -48,11 +48,7 @@ function renderProverb(statusText) {
 }
 
 function getProverb() {
-  return {
-    text: 'He that getteth wisdom loveth his own soul: he that keepeth understanding shall find good.',
-    chapter: '19',
-    verse: '8'
-  }
+  return proverbs[Math.floor(Math.random()*proverbs.length)];
 }
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -68,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
   getImageUrl( searchQuery, function(imageUrl) {
     renderStatus('Search term: ' + searchQuery + '\n' + 'Flickr search result: ' + imageUrl);
     document.getElementById('background-item').style.backgroundImage = "url('" + imageUrl + "')";
-    document.getElementById('proverb').innerHTML = proverb.text + '<br/><em>Proverbs' + proverb.chapter + ':' + proverb.verse;
+    document.getElementById('proverb').innerHTML = proverb.text + '<br/><span class="reference">Proverbs ' + proverb.chapter + ':' + proverb.verse + '</span>';
     document.getElementById('background').className = 'fadein';
     document.getElementById('background-overlay').className = 'fadein';
   }, function(errorMessage) {
