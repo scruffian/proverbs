@@ -1982,8 +1982,8 @@ var proverbsWithImages = [{
 	"chapter": 21,
 	"text": "He that followeth after righteousness and mercy findeth life, righteousness, and honour.",
 	"verse": 21,
-	"url": "https://farm2.staticflickr.com/1528/25690367914_088cd54de1_h.jpg",
-	"credit": "https://www.flickr.com/photos/22409317@N06/25690367914"
+	"url": "https://c1.staticflickr.com/1/586/20391729460_66c9c0a490_h.jpg",
+	"credit": "https://www.flickr.com/photos/khrawlings/20391729460"
 }, {
 	"chapter": 21,
 	"text": "The man that wandereth out of the way of understanding shall remain in the congregation of the dead.",
