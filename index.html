@@ -65,30 +65,38 @@
         position: absolute;
           bottom: 1em;
           right: 1em;
+          left: 1em;
+        text-decoration: none;
+      }
+      .reference a {
+        color: #fff;
         text-decoration: none;
       }
       #photo-credit {
-        left: 1em;
         right: auto;
+        z-index: 5;
+      }
+      #random {
+      	left: auto;
+        z-index: 5;
       }
       @keyframes fadein {
           from { opacity: 0; }
           to   { opacity: 1; }
       }
       </style>
-
-    <script src="proverbs.js"></script>
-    <script src="index.js"></script>
   </head>
   <body>
-    <div id="background-overlay">
-      <a id="photo-credit" class="reference">Photo credit</a>
-    </div>
+    <div id="background-overlay"></div>
     <div id="background">
       <div id="background-item"></div>
     </div>
     <div id="proverb"></div>
     <img id="preload-image" hidden />
+    <a id="photo-credit" class="reference">Photo credit</a>
+    <a href="#" id="random" class="reference">Bibliomancy</a>
+    <script src="proverbs-with-images.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
 

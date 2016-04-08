@@ -2912,7 +2912,9 @@ var proverbs = [
   {
       "chapter": 20,
       "text": "The glory of young men is their strength: and the beauty of old men is the grey head.",
-      "verse": 29
+      "verse": 29,
+      "url": "https://c1.staticflickr.com/9/8538/8617402667_f32bb5d010_h.jpg",
+      "credit": "https://www.flickr.com/photos/ljdavisdesignllc/8617402667"
   },
   {
       "chapter": 20,
@@ -2937,7 +2939,9 @@ var proverbs = [
   {
       "chapter": 21,
       "text": "An high look, and a proud heart, and the plowing of the wicked, is sin.",
-      "verse": 4
+      "verse": 4,
+      "url": "https://c2.staticflickr.com/8/7446/12891879233_3ab294706e_h.jpg",
+      "credit": "https://www.flickr.com/photos/eddie_tk/12891879233"
   },
   {
       "chapter": 21,
@@ -2962,7 +2966,9 @@ var proverbs = [
   {
       "chapter": 21,
       "text": "It is better to dwell in a corner of the housetop, than with a brawling woman in a wide house.",
-      "verse": 9
+      "verse": 9,
+      "url": "https://c2.staticflickr.com/6/5331/9343446839_eb3b01bf25_h.jpg",
+      "credit": "https://www.flickr.com/photos/19779889@N00/9343446839"
   },
   {
       "chapter": 21,
