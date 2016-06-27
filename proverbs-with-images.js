@@ -116,8 +116,8 @@ var proverbsWithImages = [{
 	"chapter": 11,
 	"text": "When a wicked man dieth, his expectation shall perish: and the hope of unjust men perisheth.",
 	"verse": 7,
-	"url": "https://farm9.staticflickr.com/8226/8540437545_b1868dc089_h.jpg",
-	"credit": "https://www.flickr.com/photos/22653006@N05/8540437545"
+	"url": "https://c2.staticflickr.com/4/3889/14293392409_61979003d3_h.jpg",
+	"credit": "https://www.flickr.com/photos/101023453@N06/14293392409"
 }, {
 	"chapter": 13,
 	"text": "A wise son heareth his father's instruction: but a scorner heareth not rebuke.",
@@ -1952,8 +1952,8 @@ var proverbsWithImages = [{
 	"chapter": 21,
 	"text": "He that loveth pleasure shall be a poor man: he that loveth wine and oil shall not be rich.",
 	"verse": 17,
-	"url": "https://farm2.staticflickr.com/1662/25447937803_f9d9c2fb38_h.jpg",
-	"credit": "https://www.flickr.com/photos/35181186@N03/25447937803"
+	"url": "https://c2.staticflickr.com/8/7526/15742118015_45326e443e_h.jpg",
+	"credit": "https://www.flickr.com/photos/rgrutkay/15742118015"
 }, {
 	"chapter": 20,
 	"text": "Mercy and truth preserve the king: and his throne is upholden by mercy.",
@@ -2672,8 +2672,8 @@ var proverbsWithImages = [{
 	"chapter": 27,
 	"text": "Wrath is cruel, and anger is outrageous; but who is able to stand before envy?",
 	"verse": 4,
-	"url": "https://farm2.staticflickr.com/1508/24236275901_cd32415f3e_h.jpg",
-	"credit": "https://www.flickr.com/photos/117427305@N05/24236275901"
+	"url": "https://farm2.staticflickr.com/7339/27842418661_0422242d02_h.jpg",
+	"credit": "https://www.flickr.com/photos/khrawlings/27842418661/"
 }, {
 	"chapter": 28,
 	"text": "Whoso keepeth the law is a wise son: but he that is a companion of riotous men shameth his father.",
