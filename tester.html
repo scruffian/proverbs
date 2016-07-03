@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Daily Proverb</title>
+    <style>
+      html {
+        height: 100%;
+      }
+      body {
+        display: flex;
+          align-items: center;
+          justify-content: center;
+        height: 100%;
+        font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+        font-size: 100%;
+        text-align: center;
+      }
+      #proverb {
+        color: #fff;
+        font-size: 4em;
+        padding: 0 10%;
+        text-align: center;
+        text-shadow: 1px 1px 0 rgba(0,0,0,0.4);
+        z-index: 4;
+      }
+      #background-overlay {
+          position: fixed;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          z-index: 2;
+          background: url(overlay-vignette.png);
+          background-size: 100% 100%;
+          opacity: 0;
+      }
+      .fadein {
+          -webkit-animation: fadein 0.5s ease 0s forwards;
+      }
+      #background {
+          margin: 0;
+          opacity: 0;
+          padding: 0;
+          z-index: 1;
+      }
+      #background, #background-item {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+      }
+
+      #background, #background-item {
+          background-color: transparent;
+          background-size: cover;
+          background-position: center center;
+          background-repeat: no-repeat;
+      }
+      .reference {
+        color: #fff;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 18px;
+        font-weight: 100;
+        position: absolute;
+          bottom: 1em;
+          right: 1em;
+          left: 1em;
+        text-decoration: none;
+      }
+      .reference a {
+        color: #fff;
+        text-decoration: none;
+      }
+      #photo-credit {
+        right: auto;
+        z-index: 5;
+      }
+      #random {
+      	left: auto;
+        z-index: 5;
+      }
+      @keyframes fadein {
+          from { opacity: 0; }
+          to   { opacity: 1; }
+      }
+      </style>
+  </head>
+  <body>
+    <div id="tester"></div>
+    <script src="proverbs-with-images.js"></script>
+    <script src="tester.js"></script>
+  </body>
+</html>
+

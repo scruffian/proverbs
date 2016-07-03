@@ -2492,14 +2492,14 @@ var proverbsWithImages = [{
 	"chapter": 26,
 	"text": "Seest thou a man wise in his own conceit? there is more hope of a fool than of him.",
 	"verse": 12,
-	"url": "https://farm2.staticflickr.com/1491/25488788423_1a2bb39ca6_h.jpg",
-	"credit": "https://www.flickr.com/photos/59590200@N05/25488788423"
+	"url": "https://farm2.staticflickr.com/8/7444/27677375640_f4d0b6f3d2_h.jpg",
+	"credit": "https://www.flickr.com/photos/khrawlings/27677375640/"
 }, {
 	"chapter": 27,
 	"text": "Boast not thyself of to morrow; for thou knowest not what a day may bring forth.",
 	"verse": 1,
-	"url": "https://farm2.staticflickr.com/1538/24759341942_cc32811982_h.jpg",
-	"credit": "https://www.flickr.com/photos/75736915@N00/24759341942"
+	"url": "https://c2.staticflickr.com/8/7337/27281015672_79832ad0b6_h.jpg",
+	"credit": "https://www.flickr.com/photos/khrawlings/27281015672/"
 }, {
 	"chapter": 27,
 	"text": "Ointment and perfume rejoice the heart: so doth the sweetness of a man's friend by hearty counsel.",
